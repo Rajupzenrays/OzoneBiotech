@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --watch src --ext js,html,css app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build"
   },
-  "author": "TheCapitalHub.in",
+  "author": "Raju",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.1411.0",
