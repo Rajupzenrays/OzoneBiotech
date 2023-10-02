@@ -13,12 +13,12 @@ import Footer from "./components/Footer/Footer";
 import Contactus from "./components/ContactUs/Contactus";
 import Cart from "./components/Cart/Cart";
 import AllProduct from "./components/AllProduct/AllProduct";
-import Wishlist from "./components/Wishlist/Wishlist";
 import { getCartData } from "./Service/cartData";
 import { useEffect } from "react";
 import store from "./Store/store";
 import { Provider } from "react-redux";
 import SingleProductMain from "./components/SingleProductMain/SingleProductMain";
+import WishList from "./components/WishList/WishList";
 
 function App() {
   // Retrieve wishlistItems from local storage
@@ -138,7 +138,7 @@ function AppRoutes() {
         element={
           <>
             <Navbar />
-            <Wishlist />
+            <WishList />
             <Footer />
           </>
         }

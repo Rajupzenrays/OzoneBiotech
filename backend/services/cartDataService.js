@@ -4,7 +4,7 @@ const { ObjectId } = require("mongodb");
 const postCartData = async (cartData) => {
   try {
     const client = getClient();
-    const database = client.db("gentleman-attlier");
+    const database = client.db("ozone-biotech");
     const collection = database.collection("cartData");
 
     // Check if the cart item already exists in the database for the given user and item ID
@@ -32,7 +32,7 @@ const postCartData = async (cartData) => {
 const getCartData = async () => {
   try {
     const client = getClient();
-    const database = client.db("gentleman-attlier");
+    const database = client.db("ozone-biotech");
     const collection = database.collection("cartData");
 
     const data = await collection.find({}).toArray();
@@ -45,7 +45,7 @@ const getCartData = async () => {
 const deleteCartDataById = async (id) => {
   try {
     const client = getClient();
-    const database = client.db("gentleman-attlier");
+    const database = client.db("ozone-biotech");
     const collection = database.collection("cartData");
 
     const result = await collection.deleteOne({ _id:id });
@@ -64,7 +64,7 @@ const updateSizeAndQuantity = async (itemId, size, quantity) => {
     }
 
     const client = getClient();
-    const database = client.db("gentleman-attlier");
+    const database = client.db("ozone-biotech");
     const collection = database.collection("cartData");
 
     const result = await collection.updateOne(

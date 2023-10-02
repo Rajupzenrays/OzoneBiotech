@@ -1,0 +1,173 @@
+.wishlist-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .popup-cart {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        color: #000;
+        z-index: 999;
+    }
+
+    .popup-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popup-content p {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+}
+
+.wishlist-card {
+    width: calc(33.33% - 60px);
+    /* Set the width to approximately one-third minus margins */
+    margin: 0px 10px 10px 20px;
+    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.11);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.fav-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.text-btns {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+
+    h2 {
+        color: #DCAE59;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    h4 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .btns-text {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        flex-direction: column;
+
+        button {
+            display: flex;
+            height: 39px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            background: #DCAE59;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border: none;
+        }
+    }
+
+    .price-section {
+        display: flex;
+        align-items: center;
+
+        .main-price {
+            color: #000;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .discount-price {
+            display: flex;
+            text-decoration: line-through;
+            color: #6C6C6C;
+            font-family: Poppins;
+            font-size: 9.068px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .discount-percentage {
+            color: #DCAE59;
+            font-family: Poppins;
+            font-size: 8px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+
+.wishlist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wishlist-items {
+    width: 70%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.order-details {
+    width: 30%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .order-details-container {
+        background-color: #f2f2f2;
+        padding: 20px;
+
+        h2 {
+            margin-top: 0;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    }
+}

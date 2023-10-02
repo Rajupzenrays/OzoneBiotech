@@ -91,7 +91,7 @@ const SingleProductMain = ({ selectedItem, cartItems,addToCart }) => {
                   >
                     ADD TO CART
                   </button>
-                  <button className="buttons">By now</button>
+                  <button className="buttons">Add To Favorite</button>
                 </div>
             
 
