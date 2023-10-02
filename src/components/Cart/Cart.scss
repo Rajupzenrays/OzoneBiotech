@@ -1,0 +1,124 @@
+.cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-items {
+    width: 69%;
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 12rem;
+    border: 1px solid #A4A4A4;
+}
+
+.cart-item-image {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    img{
+        width: 100%;
+    }
+}
+
+.cart-item-details {
+    width: 70%;
+    padding: 10px;
+
+    p {
+        margin: 0;
+    }
+
+    h3 {
+        margin-top: 0;
+        color: #000;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .delete {
+        background: #ff5400;
+        padding: 5px 20px;
+        border: none;
+        color: #fff;
+        margin-top: 10px;
+
+    }
+
+    .sizes {
+        display: flex;
+        align-items: center;
+    }
+
+    .sizes label {
+        margin-right: 10px;
+    }
+
+    .sizes select {
+        background-color: #fff;
+        border: none;
+        padding: 5px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .sizes select::-ms-expand {
+        display: none;
+    }
+
+    .sizes select:hover,
+    .sizes select:focus {
+        cursor: pointer;
+    }
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+
+    p {
+        margin: 0;
+    }
+
+    button {
+        background: #66ff00;
+        padding: 10px 30px;
+        border: none;
+        color: #fff;
+    }
+}
+
+.quantity-controls button {
+    padding: 0px 20px;
+    margin: 0 15px;
+}
+
+.order-details {
+    width: 30%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #A4A4A4;
+    height: fit-content;
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background: #66ff00;
+        padding: 10px 30px;
+        border: none;
+        color: #fff;
+    }
+}

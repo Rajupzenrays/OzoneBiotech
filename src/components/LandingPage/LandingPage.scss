@@ -1,0 +1,237 @@
+.b {
+  border: 2px solid red;
+}
+.landing_main_container {
+  .landingpage_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
+      url("../../Images/ozoneproduct/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+
+    .decor_para{
+        color: #f6f6f6;
+        font-size: 28px;
+        font-family: Frank Ruhl Libre;
+        font-weight: 900;
+        line-height: 30px;
+        margin-top: 80px;
+    }
+  }
+
+  .left_content {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 70px;
+
+    .text_content {
+      // max-width: 500px;
+
+      h2 {
+        color: #f6f6f6;
+        font-size: 58px;
+        font-family: Frank Ruhl Libre;
+        font-weight: 900;
+        line-height: 80px;
+      }
+
+      h5 {
+        color: #c3c3c3;
+        font-size: 22px;
+        font-family: Lato;
+        font-weight: 500;
+        line-height: 150%;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .right_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    color: #fff;
+    bottom: 0;
+    height: 100%;
+    .ShivanshuPic{
+        width: 100%;
+    }
+
+    img {
+      width: 70%;
+      height: 285px;
+      margin-bottom: 10%;
+      margin-right: 30%;
+    }
+
+    .btn_right {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      button {
+        width: 202px;
+        height: 49px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        margin-left: 10px;
+        background-color: #f6f6f6;
+        color: #66ff00;
+        border: none;
+        border-radius: 50px;
+      }
+
+      button:first-child {
+        background: #66ff00 !important;
+        color: #fff;
+      }
+    }
+
+    .content_div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: start;
+    }
+    .content_div_img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+  }
+
+  .product_main_image {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 25rem;
+
+    button {
+      position: absolute;
+      right: 40px;
+      bottom: 30px;
+      display: flex;
+      width: 203px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 5px;
+      background: #000;
+      border: none;
+      color: #fff;
+    }
+  }
+
+  .carousel_container {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
+    url("../../Images/ozoneproduct/background-image.jpg");
+    .carousel {
+      position: relative;
+      width: 80%;
+      padding: 0;
+      margin: 0;
+      .carousel-indicators {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+
+        li {
+          width: 30px;
+          height: 2px;
+          background-color: #aaaaaa;
+          margin: 0 5px;
+          cursor: pointer;
+        }
+
+        li.active {
+          background-color: #66ff00;
+          height: 3px;
+        }
+      }
+    }
+
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-item {
+      flex: 0 0 100%;
+      margin-right: 15px;
+    }
+
+    .carousel-item:last-child {
+      margin-right: 0;
+    }
+
+    .carousel-item {
+      img {
+        width: 100%;
+        height: 20rem;
+      }
+      .carousel-line {
+        width: 20%;
+        height: 2px;
+        background-color: #ff0000;
+        margin-bottom: 10px;
+      }
+      button {
+        position: absolute;
+        right: 40px;
+        bottom: 30px;
+        display: flex;
+        width: 203px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: #66ff00;
+        border: none;
+        color: #fff;
+      }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      padding: 8px 12px;
+      border: none;
+      background-color: transparent;
+      color: #66ff00;
+      cursor: pointer;
+    }
+
+    .carousel-control-prev {
+      left: 15px;
+    }
+
+    .carousel-control-next {
+      right: 15px;
+    }
+  }
+}
